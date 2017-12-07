@@ -25,8 +25,8 @@ ext {
 }
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion 27
+    buildToolsVersion "27.0.2"
 
     lintOptions {
         abortOnError false
@@ -47,7 +47,7 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:recyclerview-v7:25.1.1'
+    compile 'com.android.support:recyclerview-v7:24.2.0'
     compile 'joda-time:joda-time:2.9.7'
 }
 
