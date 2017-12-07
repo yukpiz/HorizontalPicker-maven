@@ -24,20 +24,9 @@ ext {
     allLicenses = ["Apache-2.0"]
 }
 
-configurations.all {
-    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
-        def requested = details.requested
-        if (requested.group == 'com.android.support.v4') {
-            if (!requested.name.startsWith("multidex")) {
-                details.useVersion '25.0.2'
-            }
-        }
-    }
-}
-
 android {
-    compileSdkVersion 26
-    buildToolsVersion "26.0.2"
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
 
     lintOptions {
         abortOnError false
